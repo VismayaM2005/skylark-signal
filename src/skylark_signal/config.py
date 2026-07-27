@@ -1,9 +1,12 @@
 import os
 from typing import Optional
-from dotenv import load_dotenv
 
-# Load .env if present
-load_dotenv()
+# Try to load dotenv if available
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 
 class Config:
     """Application configuration for Skylark Signal."""
