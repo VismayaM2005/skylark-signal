@@ -53,13 +53,29 @@ class Config:
             return "***"
         return f"***{self.openrouter_api_key[-4:]}"
 
+    @property
+    def available_llm_providers(self) -> list:
+        """
+        Returns the list of LLM provider names to show in the UI.
+
+        Rules:
+          - "Deterministic" is always present (no key required).
+          - "OpenRouter" is always listed; the user can paste a key in the sidebar.
+          - "OpenAI" is included ONLY when OPENAI_API_KEY is set in the environment.
+        """
+        providers = ["Deterministic", "OpenRouter"]
+        if self.openai_api_key:
+            providers.append("OpenAI")
+        return providers
+
     def __repr__(self) -> str:
         return (
             f"Config("
             f"monday_api_url='{self.monday_api_url}', "
             f"openrouter_base_url='{self.openrouter_base_url}', "
             f"monday_token='{self.masked_token}', "
-            f"openrouter_token='{self.masked_openrouter_token}')"
+            f"openrouter_token='{self.masked_openrouter_token}', "
+            f"providers={self.available_llm_providers})"
         )
 
 # Global singleton configuration instance

@@ -34,13 +34,16 @@ def init_session_state():
     if "selected_status" not in st.session_state:
         st.session_state["selected_status"] = "All Statuses"
 
-    # LLM Settings Session State
+    # LLM Settings Session State — provider list is built from config, not hardcoded
     if "llm_provider" not in st.session_state:
-        if config.openrouter_api_key:
+        available = config.available_llm_providers
+        if config.openrouter_api_key and "OpenRouter" in available:
             st.session_state["llm_provider"] = "OpenRouter"
-        elif config.openai_api_key:
-            st.session_state["llm_provider"] = "OpenAI"
         else:
+            st.session_state["llm_provider"] = "Deterministic"
+    else:
+        # Guard: if a previously-persisted provider is no longer available, reset
+        if st.session_state["llm_provider"] not in config.available_llm_providers:
             st.session_state["llm_provider"] = "Deterministic"
 
     if "openrouter_models" not in st.session_state:

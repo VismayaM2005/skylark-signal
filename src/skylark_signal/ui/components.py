@@ -120,9 +120,14 @@ def render_llm_settings_sidebar():
         unsafe_allow_html=True,
     )
 
-    provider_options = ["Deterministic", "OpenRouter", "OpenAI"]
+    # Provider list is driven by config — OpenAI appears only when its key is set
+    provider_options = config.available_llm_providers
     curr_provider = st.session_state.get("llm_provider", "Deterministic")
-    provider_idx = provider_options.index(curr_provider) if curr_provider in provider_options else 0
+    # Safety: if a stale session value is no longer in the available list, reset
+    if curr_provider not in provider_options:
+        curr_provider = "Deterministic"
+        st.session_state["llm_provider"] = "Deterministic"
+    provider_idx = provider_options.index(curr_provider)
     sel_provider = st.sidebar.selectbox("Provider", provider_options, index=provider_idx)
     st.session_state["llm_provider"] = sel_provider
 
@@ -159,21 +164,9 @@ def render_llm_settings_sidebar():
         st.session_state["selected_llm_model"] = sel_slug
 
     elif sel_provider == "OpenAI":
-        custom_key = st.sidebar.text_input(
-            "OpenAI API Key:",
-            value=st.session_state.get("user_openai_key", config.openai_api_key or ""),
-            type="password",
-            help="Paste sk-... key or set OPENAI_API_KEY in .env",
-        )
-        if custom_key:
-            config.openai_api_key = custom_key
-            st.session_state["user_openai_key"] = custom_key
-
+        # This branch is only reachable when OPENAI_API_KEY is set (guarded by config.available_llm_providers)
         if config.openai_api_key:
             st.sidebar.markdown("<span style='color:#34D399; font-size:12px;'>● OpenAI key set</span>", unsafe_allow_html=True)
-        else:
-            st.sidebar.markdown("<span style='color:#FBBF24; font-size:12px;'>⚠ Key unset — deterministic fallback</span>", unsafe_allow_html=True)
-
         sel_slug = st.sidebar.selectbox("Model", ["gpt-4o-mini", "gpt-4o"], index=0)
         st.session_state["selected_llm_model"] = sel_slug
 
