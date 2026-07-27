@@ -1,0 +1,879 @@
+{
+  "dataset": "Work Orders",
+  "worksheet": "work order tracker",
+  "metrics": {
+    "raw_worksheet_rows": 178,
+    "blank_rows_removed": 1,
+    "repeated_header_rows_removed": 0,
+    "exact_duplicate_business_rows": 0,
+    "usable_business_records": 176,
+    "column_count": 38
+  },
+  "columns": {
+    "Deal name masked": {
+      "source_column": "Deal name masked",
+      "dtype": "object",
+      "missing_count": 1,
+      "missing_percentage": 0.57,
+      "unique_value_count": 59,
+      "sample_values": [
+        "Scooby-Doo",
+        "Appa",
+        "Sakura",
+        "SpongeBob",
+        "Edward Elric"
+      ],
+      "top_value_counts": {
+        "Alias_160": 21,
+        "Alphonse": 14,
+        "Tanjiro": 10,
+        "Subaru": 9,
+        "Sakura": 9,
+        "Scooby-Doo": 8,
+        "Ben Tennyson": 8,
+        "Timon": 7,
+        "Mojo Jojo": 7,
+        "Alias_162": 6
+      }
+    },
+    "Customer Name Code": {
+      "source_column": "Customer Name Code",
+      "dtype": "object",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_value_count": 51,
+      "sample_values": [
+        "WOCOMPANY_002",
+        "WOCOMPANY_038",
+        "WOCOMPANY_032",
+        "WOCOMPANY_008",
+        "WOCOMPANY_047"
+      ],
+      "top_value_counts": {
+        "WOCOMPANY_051": 26,
+        "WOCOMPANY_002": 21,
+        "WOCOMPANY_009": 14,
+        "WOCOMPANY_019": 9,
+        "WOCOMPANY_046": 7,
+        "WOCOMPANY_052": 7,
+        "WOCOMPANY_036": 7,
+        "WOCOMPANY_033": 7,
+        "WOCOMPANY_005": 6,
+        "WOCOMPANY_020": 5
+      }
+    },
+    "Serial #": {
+      "source_column": "Serial #",
+      "dtype": "object",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_value_count": 176,
+      "sample_values": [
+        "SDPLDEAL-075",
+        "SDPLDEAL-101",
+        "SDPLDEAL-002",
+        "SDPLDEAL-003",
+        "SDPLDEAL-004"
+      ],
+      "top_value_counts": {
+        "SDPLDEAL-075": 1,
+        "SDPLDEAL-101": 1,
+        "SDPLDEAL-002": 1,
+        "SDPLDEAL-003": 1,
+        "SDPLDEAL-004": 1,
+        "SDPLDEAL-005": 1,
+        "SDPLDEAL-001": 1,
+        "SDPLDEAL-006": 1,
+        "SDPLDEAL-007": 1,
+        "SDPLDEAL-008": 1
+      }
+    },
+    "Nature of Work": {
+      "source_column": "Nature of Work",
+      "dtype": "object",
+      "missing_count": 12,
+      "missing_percentage": 6.82,
+      "unique_value_count": 5,
+      "sample_values": [
+        "One time Project",
+        "Proof of Concept",
+        "Monthly Contract",
+        "Annual Rate Contract"
+      ],
+      "top_value_counts": {
+        "One time Project": 125,
+        "Proof of Concept": 15,
+        "Annual Rate Contract": 14,
+        "nan": 12,
+        "Monthly Contract": 10
+      }
+    },
+    "Last executed month of recurring project": {
+      "source_column": "Last executed month of recurring project",
+      "dtype": "object",
+      "missing_count": 161,
+      "missing_percentage": 91.48,
+      "unique_value_count": 6,
+      "sample_values": [
+        "Dec",
+        "June",
+        "November",
+        "May",
+        "March"
+      ],
+      "top_value_counts": {
+        "nan": 161,
+        "Dec": 6,
+        "May": 4,
+        "June": 3,
+        "November": 1,
+        "March": 1
+      }
+    },
+    "Execution Status": {
+      "source_column": "Execution Status",
+      "dtype": "object",
+      "missing_count": 4,
+      "missing_percentage": 2.27,
+      "unique_value_count": 8,
+      "sample_values": [
+        "Completed",
+        "Not Started",
+        "Executed until current month",
+        "Ongoing",
+        "Pause / struck"
+      ],
+      "top_value_counts": {
+        "Completed": 117,
+        "Ongoing": 25,
+        "Executed until current month": 12,
+        "Not Started": 11,
+        "Pause / struck": 4,
+        "nan": 4,
+        "Partial Completed": 2,
+        "Details pending from Client": 1
+      }
+    },
+    "Data Delivery Date": {
+      "source_column": "Data Delivery Date",
+      "dtype": "object",
+      "missing_count": 118,
+      "missing_percentage": 67.05,
+      "unique_value_count": 43,
+      "sample_values": [
+        "2025-09-27 00:00:00",
+        "2025-12-31 00:00:00",
+        "2025-05-28 00:00:00",
+        "2025-05-30 00:00:00",
+        "2025-06-10 00:00:00"
+      ],
+      "top_value_counts": {
+        "NaT": 118,
+        "2025-05-13 00:00:00": 3,
+        "2025-05-09 00:00:00": 3,
+        "2025-05-06 00:00:00": 2,
+        "2025-06-10 00:00:00": 2,
+        "2026-01-09 00:00:00": 2,
+        "2025-06-15 00:00:00": 2,
+        "2025-06-16 00:00:00": 2,
+        "2025-06-11 00:00:00": 2,
+        "2025-06-24 00:00:00": 2
+      }
+    },
+    "Date of PO/LOI": {
+      "source_column": "Date of PO/LOI",
+      "dtype": "object",
+      "missing_count": 1,
+      "missing_percentage": 0.57,
+      "unique_value_count": 104,
+      "sample_values": [
+        "2025-10-29 00:00:00",
+        "2025-07-31 00:00:00",
+        "2025-05-16 00:00:00",
+        "2025-05-08 00:00:00",
+        "2025-05-06 00:00:00"
+      ],
+      "top_value_counts": {
+        "2025-04-10 00:00:00": 44,
+        "2025-04-01 00:00:00": 5,
+        "2026-01-09 00:00:00": 4,
+        "2025-06-11 00:00:00": 3,
+        "2025-10-27 00:00:00": 3,
+        "2025-05-22 00:00:00": 2,
+        "2025-01-21 00:00:00": 2,
+        "2025-05-16 00:00:00": 2,
+        "2025-03-25 00:00:00": 2,
+        "2025-09-10 00:00:00": 2
+      }
+    },
+    "Document Type": {
+      "source_column": "Document Type",
+      "dtype": "object",
+      "missing_count": 14,
+      "missing_percentage": 7.95,
+      "unique_value_count": 4,
+      "sample_values": [
+        "Purchase Order",
+        "LOA/LOI",
+        "Email Confirmation"
+      ],
+      "top_value_counts": {
+        "Purchase Order": 141,
+        "nan": 14,
+        "Email Confirmation": 11,
+        "LOA/LOI": 10
+      }
+    },
+    "Probable Start Date": {
+      "source_column": "Probable Start Date",
+      "dtype": "object",
+      "missing_count": 18,
+      "missing_percentage": 10.23,
+      "unique_value_count": 88,
+      "sample_values": [
+        "2025-05-31 00:00:00",
+        "2025-08-11 00:00:00",
+        "2025-05-01 00:00:00",
+        "2025-05-20 00:00:00",
+        "2025-05-24 00:00:00"
+      ],
+      "top_value_counts": {
+        "2025-05-01 00:00:00": 25,
+        "NaT": 18,
+        "2025-07-01 00:00:00": 5,
+        "2025-04-15 00:00:00": 5,
+        "2025-09-15 00:00:00": 4,
+        "2025-04-01 00:00:00": 4,
+        "2025-11-03 00:00:00": 4,
+        "2025-05-20 00:00:00": 3,
+        "2025-11-13 00:00:00": 3,
+        "2025-09-29 00:00:00": 3
+      }
+    },
+    "Probable End Date": {
+      "source_column": "Probable End Date",
+      "dtype": "object",
+      "missing_count": 19,
+      "missing_percentage": 10.8,
+      "unique_value_count": 76,
+      "sample_values": [
+        "2025-06-03 00:00:00",
+        "2025-08-15 00:00:00",
+        "2026-04-30 00:00:00",
+        "2025-05-31 00:00:00",
+        "2025-06-20 00:00:00"
+      ],
+      "top_value_counts": {
+        "NaT": 19,
+        "2025-05-31 00:00:00": 15,
+        "2025-12-31 00:00:00": 11,
+        "2025-05-30 00:00:00": 10,
+        "2025-06-16 00:00:00": 6,
+        "2025-06-30 00:00:00": 6,
+        "2025-06-20 00:00:00": 6,
+        "2026-01-31 00:00:00": 5,
+        "2026-03-31 00:00:00": 4,
+        "2025-10-31 00:00:00": 4
+      }
+    },
+    "BD/KAM Personnel code": {
+      "source_column": "BD/KAM Personnel code",
+      "dtype": "object",
+      "missing_count": 11,
+      "missing_percentage": 6.25,
+      "unique_value_count": 8,
+      "sample_values": [
+        "OWNER_003",
+        "OWNER_002",
+        "OWNER_005",
+        "OWNER_001",
+        "OWNER_004"
+      ],
+      "top_value_counts": {
+        "OWNER_001": 87,
+        "OWNER_003": 61,
+        "nan": 11,
+        "OWNER_004": 6,
+        "OWNER_002": 5,
+        "OWNER_005": 4,
+        "OWNER_008": 1,
+        "OWNER_006": 1
+      }
+    },
+    "Sector": {
+      "source_column": "Sector",
+      "dtype": "object",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_value_count": 6,
+      "sample_values": [
+        "Mining",
+        "Powerline",
+        "Renewables",
+        "Railways",
+        "Construction"
+      ],
+      "top_value_counts": {
+        "Mining": 100,
+        "Renewables": 51,
+        "Railways": 13,
+        "Powerline": 6,
+        "Others": 4,
+        "Construction": 2
+      }
+    },
+    "Type of Work": {
+      "source_column": "Type of Work",
+      "dtype": "object",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_value_count": 36,
+      "sample_values": [
+        "Raw images/videography",
+        "Powerline Inspection",
+        "Volumetric survey",
+        "Topography Survey: RGB",
+        "Hydrology"
+      ],
+      "top_value_counts": {
+        "Topography Survey: RGB": 65,
+        "Others": 24,
+        "LiDAR Survey: LiDAR": 13,
+        "Topography Survey: RGB, Hydrology": 9,
+        "Hydrology, Topography Survey: RGB": 9,
+        "Hydrology": 6,
+        "Volumetric survey": 6,
+        "Thermography": 5,
+        "Raw images/videography": 4,
+        "Powerline Inspection": 3
+      }
+    },
+    "Is any Skylark software platform part of the client deliverables in this deal?": {
+      "source_column": "Is any Skylark software platform part of the client deliverables in this deal?",
+      "dtype": "object",
+      "missing_count": 12,
+      "missing_percentage": 6.82,
+      "unique_value_count": 5,
+      "sample_values": [
+        "NONE",
+        "SPECTRA",
+        "DMO",
+        "SPECTRA + DMO"
+      ],
+      "top_value_counts": {
+        "NONE": 127,
+        "SPECTRA": 33,
+        "nan": 12,
+        "DMO": 2,
+        "SPECTRA + DMO": 2
+      }
+    },
+    "Last invoice date": {
+      "source_column": "Last invoice date",
+      "dtype": "object",
+      "missing_count": 89,
+      "missing_percentage": 50.57,
+      "unique_value_count": 45,
+      "sample_values": [
+        "2026-01-14 00:00:00",
+        "2025-09-15 00:00:00",
+        "2025-07-18 00:00:00",
+        "2025-09-06 00:00:00",
+        "2025-06-16 00:00:00"
+      ],
+      "top_value_counts": {
+        "NaT": 89,
+        "2025-08-06 00:00:00": 10,
+        "2025-06-27 00:00:00": 4,
+        "2025-08-20 00:00:00": 4,
+        "2025-06-24 00:00:00": 4,
+        "2025-07-28 00:00:00": 4,
+        "2025-08-07 00:00:00": 3,
+        "2025-03-31 00:00:00": 3,
+        "2025-06-20 00:00:00": 3,
+        "2025-07-25 00:00:00": 3
+      }
+    },
+    "latest invoice no.": {
+      "source_column": "latest invoice no.",
+      "dtype": "object",
+      "missing_count": 88,
+      "missing_percentage": 50.0,
+      "unique_value_count": 87,
+      "sample_values": [
+        "SDPL/FY25-26/916",
+        "SDPL/FY25-26/449",
+        "SDPL/FY25-26/359",
+        "SDPL/FY25-26/431",
+        "SDPL/FY25-26/064"
+      ],
+      "top_value_counts": {
+        "nan": 88,
+        "SDPL/FY25-26/442": 2,
+        "SDPL/FY25-26/083": 2,
+        "SDPL/FY25-26/359": 1,
+        "SDPL/FY25-26/431": 1,
+        "SDPL/FY25-26/916": 1,
+        "SDPL/FY25-26/449": 1,
+        "SDPL/FY25-26/365": 1,
+        "SDPL/FY25-26/385": 1,
+        "SDPL/FY25-26/096": 1
+      }
+    },
+    "Amount in Rupees (Excl of GST) (Masked)": {
+      "source_column": "Amount in Rupees (Excl of GST) (Masked)",
+      "dtype": "object",
+      "missing_count": 1,
+      "missing_percentage": 0.57,
+      "unique_value_count": 146,
+      "sample_values": [
+        "264398.08",
+        "154150",
+        "2984097.3600000003",
+        "184980",
+        "1132250.2480000001"
+      ],
+      "top_value_counts": {
+        "277470": 6,
+        "0": 6,
+        "1.2332": 4,
+        "308300": 3,
+        "215810": 3,
+        "143051.2": 3,
+        "184980": 3,
+        "431620": 2,
+        "24664": 2,
+        "554940": 2
+      }
+    },
+    "Amount in Rupees (Incl of GST) (Masked)": {
+      "source_column": "Amount in Rupees (Incl of GST) (Masked)",
+      "dtype": "object",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_value_count": 145,
+      "sample_values": [
+        "311989.7344",
+        "181897",
+        "3521234.8848",
+        "218276.40000000002",
+        "1336055.29264"
+      ],
+      "top_value_counts": {
+        "0": 7,
+        "327414.60000000003": 6,
+        "1.455176": 4,
+        "363794": 3,
+        "168800.416": 3,
+        "254655.80000000002": 3,
+        "218276.40000000002": 3,
+        "181897": 2,
+        "654829.2000000001": 2,
+        "29103.52": 2
+      }
+    },
+    "Billed Value in Rupees (Excl of GST.) (Masked)": {
+      "source_column": "Billed Value in Rupees (Excl of GST.) (Masked)",
+      "dtype": "object",
+      "missing_count": 63,
+      "missing_percentage": 35.8,
+      "unique_value_count": 101,
+      "sample_values": [
+        "23959.682484",
+        "184980",
+        "1215157.5440800001",
+        "135652",
+        "3662604"
+      ],
+      "top_value_counts": {
+        "nan": 63,
+        "277470": 6,
+        "184980": 3,
+        "24664": 2,
+        "308300": 2,
+        "215810": 2,
+        "431620": 2,
+        "246640.00000000003": 2,
+        "339130": 2,
+        "135652": 1
+      }
+    },
+    "Billed Value in Rupees (Incl of GST.) (Masked)": {
+      "source_column": "Billed Value in Rupees (Incl of GST.) (Masked)",
+      "dtype": "object",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_value_count": 101,
+      "sample_values": [
+        "0",
+        "28272.42533112",
+        "218276.40000000002",
+        "1433885.9020144",
+        "160069.36000000002"
+      ],
+      "top_value_counts": {
+        "0": 63,
+        "327414.60000000003": 6,
+        "218276.40000000002": 3,
+        "29103.52": 2,
+        "363794": 2,
+        "254655.80000000002": 2,
+        "509311.60000000003": 2,
+        "291035.2": 2,
+        "400173.4": 2,
+        "160069.36000000002": 1
+      }
+    },
+    "Collected Amount in Rupees (Incl of GST.) (Masked)": {
+      "source_column": "Collected Amount in Rupees (Incl of GST.) (Masked)",
+      "dtype": "object",
+      "missing_count": 98,
+      "missing_percentage": 55.68,
+      "unique_value_count": 77,
+      "sample_values": [
+        "66880.13560000001",
+        "160069.36000000002",
+        "1405108.08",
+        "178672.182",
+        "1225606.681988"
+      ],
+      "top_value_counts": {
+        "nan": 98,
+        "509311.60000000003": 2,
+        "400173.4": 2,
+        "66880.13560000001": 1,
+        "160069.36000000002": 1,
+        "1225606.681988": 1,
+        "397840.85152799997": 1,
+        "641154.9234600001": 1,
+        "371722.89639600005": 1,
+        "186359.876808": 1
+      }
+    },
+    "Amount to be billed in Rs. (Exl. of GST) (Masked)": {
+      "source_column": "Amount to be billed in Rs. (Exl. of GST) (Masked)",
+      "dtype": "object",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_value_count": 99,
+      "sample_values": [
+        "264398.08",
+        "154150",
+        "2960137.677516",
+        "0",
+        "-82907.29608"
+      ],
+      "top_value_counts": {
+        "0": 70,
+        "1.2332": 4,
+        "554940": 2,
+        "295968": 2,
+        "289802": 2,
+        "143051.2": 2,
+        "64373.04": 2,
+        "2960137.677516": 1,
+        "154150": 1,
+        "264398.08": 1
+      }
+    },
+    "Amount to be billed in Rs. (Incl. of GST) (Masked)": {
+      "source_column": "Amount to be billed in Rs. (Incl. of GST) (Masked)",
+      "dtype": "object",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_value_count": 99,
+      "sample_values": [
+        "311989.7344",
+        "181897",
+        "3492962.4594688797",
+        "0",
+        "-97830.6093744"
+      ],
+      "top_value_counts": {
+        "0": 70,
+        "1.455176": 4,
+        "654829.2000000001": 2,
+        "349242.24000000005": 2,
+        "341966.36000000004": 2,
+        "168800.416": 2,
+        "75960.1872": 2,
+        "3492962.4594688797": 1,
+        "181897": 1,
+        "311989.7344": 1
+      }
+    },
+    "Amount Receivable (Masked)": {
+      "source_column": "Amount Receivable (Masked)",
+      "dtype": "object",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_value_count": 96,
+      "sample_values": [
+        "0",
+        "28272.42533112",
+        "151396.26440000001",
+        "1433885.9020144",
+        "2916764.64"
+      ],
+      "top_value_counts": {
+        "0": 77,
+        "327414.60000000003": 5,
+        "151396.26440000001": 1,
+        "28272.42533112": 1,
+        "2916764.64": 1,
+        "0.10432872": 1,
+        "830907.2814269599": 1,
+        "1433885.9020144": 1,
+        "404747.85082464": 1,
+        "132930.32760000002": 1
+      }
+    },
+    "AR Priority account": {
+      "source_column": "AR Priority account",
+      "dtype": "object",
+      "missing_count": 166,
+      "missing_percentage": 94.32,
+      "unique_value_count": 2,
+      "sample_values": [
+        "Priority"
+      ],
+      "top_value_counts": {
+        "nan": 166,
+        "Priority": 10
+      }
+    },
+    "Quantity by Ops": {
+      "source_column": "Quantity by Ops",
+      "dtype": "object",
+      "missing_count": 133,
+      "missing_percentage": 75.57,
+      "unique_value_count": 44,
+      "sample_values": [
+        "447.170583",
+        "2424.42",
+        "629.83",
+        "3319.81",
+        "2125.654959"
+      ],
+      "top_value_counts": {
+        "nan": 133,
+        "447.170583": 1,
+        "2424.42": 1,
+        "629.83": 1,
+        "3319.81": 1,
+        "2125.654959": 1,
+        "964.831248": 1,
+        "922.484": 1,
+        "613.57": 1,
+        "1213.9": 1
+      }
+    },
+    "Quantities as per PO": {
+      "source_column": "Quantities as per PO",
+      "dtype": "object",
+      "missing_count": 16,
+      "missing_percentage": 9.09,
+      "unique_value_count": 119,
+      "sample_values": [
+        "5360 HA",
+        "4",
+        "3000",
+        "600",
+        "59.33"
+      ],
+      "top_value_counts": {
+        "1": 38,
+        "nan": 16,
+        "45days": 3,
+        "1600": 2,
+        "2500": 2,
+        "45 days": 2,
+        "3000": 1,
+        "12": 1,
+        "59.33": 1,
+        "4800": 1
+      }
+    },
+    "Quantity billed (till date)": {
+      "source_column": "Quantity billed (till date)",
+      "dtype": "object",
+      "missing_count": 153,
+      "missing_percentage": 86.93,
+      "unique_value_count": 18,
+      "sample_values": [
+        "1",
+        "2",
+        "1207",
+        "2623.49",
+        "815.61"
+      ],
+      "top_value_counts": {
+        "nan": 153,
+        "1": 7,
+        "2": 1,
+        "1207": 1,
+        "2623.49": 1,
+        "815.61": 1,
+        "3956": 1,
+        "7": 1,
+        "456.09": 1,
+        "651.75": 1
+      }
+    },
+    "Balance in quantity": {
+      "source_column": "Balance in quantity",
+      "dtype": "object",
+      "missing_count": 19,
+      "missing_percentage": 10.8,
+      "unique_value_count": 96,
+      "sample_values": [
+        "5360",
+        "4",
+        "3000",
+        "600",
+        "59.33"
+      ],
+      "top_value_counts": {
+        "1": 32,
+        "nan": 19,
+        "0": 13,
+        "45": 5,
+        "3": 4,
+        "4": 3,
+        "6": 3,
+        "2": 3,
+        "40": 2,
+        "300": 2
+      }
+    },
+    "Invoice Status": {
+      "source_column": "Invoice Status",
+      "dtype": "object",
+      "missing_count": 64,
+      "missing_percentage": 36.36,
+      "unique_value_count": 7,
+      "sample_values": [
+        "Not billed yet",
+        "Fully Billed",
+        "Partially Billed",
+        "Billed- Visit 7",
+        "Billed- Visit 3"
+      ],
+      "top_value_counts": {
+        "Fully Billed": 91,
+        "nan": 64,
+        "Partially Billed": 10,
+        "Not billed yet": 8,
+        "Billed- Visit 7": 1,
+        "Billed- Visit 3": 1,
+        "Stuck": 1
+      }
+    },
+    "Expected Billing Month": {
+      "source_column": "Expected Billing Month",
+      "dtype": "object",
+      "missing_count": 176,
+      "missing_percentage": 100.0,
+      "unique_value_count": 1,
+      "sample_values": [],
+      "top_value_counts": {
+        "nan": 176
+      }
+    },
+    "Actual Billing Month": {
+      "source_column": "Actual Billing Month",
+      "dtype": "object",
+      "missing_count": 106,
+      "missing_percentage": 60.23,
+      "unique_value_count": 8,
+      "sample_values": [
+        "July",
+        "August",
+        "June",
+        "September",
+        "November"
+      ],
+      "top_value_counts": {
+        "nan": 106,
+        "July": 24,
+        "August": 17,
+        "September": 8,
+        "June": 6,
+        "November": 6,
+        "Dec": 6,
+        "October": 3
+      }
+    },
+    "Actual Collection Month": {
+      "source_column": "Actual Collection Month",
+      "dtype": "object",
+      "missing_count": 176,
+      "missing_percentage": 100.0,
+      "unique_value_count": 1,
+      "sample_values": [],
+      "top_value_counts": {
+        "nan": 176
+      }
+    },
+    "WO Status (billed)": {
+      "source_column": "WO Status (billed)",
+      "dtype": "object",
+      "missing_count": 74,
+      "missing_percentage": 42.05,
+      "unique_value_count": 3,
+      "sample_values": [
+        "Open",
+        "Closed"
+      ],
+      "top_value_counts": {
+        "Closed": 78,
+        "nan": 74,
+        "Open": 24
+      }
+    },
+    "Collection status": {
+      "source_column": "Collection status",
+      "dtype": "object",
+      "missing_count": 176,
+      "missing_percentage": 100.0,
+      "unique_value_count": 1,
+      "sample_values": [],
+      "top_value_counts": {
+        "nan": 176
+      }
+    },
+    "Collection Date": {
+      "source_column": "Collection Date",
+      "dtype": "object",
+      "missing_count": 176,
+      "missing_percentage": 100.0,
+      "unique_value_count": 1,
+      "sample_values": [],
+      "top_value_counts": {
+        "nan": 176
+      }
+    },
+    "Billing Status": {
+      "source_column": "Billing Status",
+      "dtype": "object",
+      "missing_count": 148,
+      "missing_percentage": 84.09,
+      "unique_value_count": 6,
+      "sample_values": [
+        "Update Required",
+        "Partially Billed",
+        "BIlled",
+        "Not Billable",
+        "Stuck"
+      ],
+      "top_value_counts": {
+        "nan": 148,
+        "Update Required": 12,
+        "Not Billable": 7,
+        "Partially Billed": 3,
+        "BIlled": 3,
+        "Stuck": 3
+      }
+    }
+  }
+}

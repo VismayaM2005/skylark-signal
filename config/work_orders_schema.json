@@ -1,0 +1,136 @@
+{
+  "board_name": "monday.com Work Orders Board",
+  "source_worksheet": "work order tracker",
+  "fields": [
+    {
+      "canonical_name": "work_order_id",
+      "source_column": "Serial #",
+      "recommended_type": "string",
+      "required": true,
+      "normalization_needed": "Trim whitespace, maintain exact SDPLDEAL-XXX formatting",
+      "mapping_confidence": 0.95,
+      "unresolved_ambiguity": "Named 'Serial #' in raw file; contains deal-referenced work order identifiers.",
+      "monday_column_type": "text"
+    },
+    {
+      "canonical_name": "work_order_name",
+      "source_column": "Deal name masked",
+      "recommended_type": "string",
+      "required": true,
+      "normalization_needed": "Trim whitespace, document alias masking",
+      "mapping_confidence": 0.85,
+      "unresolved_ambiguity": "Masked deal name used as work order title.",
+      "monday_column_type": "name"
+    },
+    {
+      "canonical_name": "deal_reference",
+      "source_column": "Serial #",
+      "recommended_type": "string",
+      "required": false,
+      "normalization_needed": "Use SDPLDEAL-XXX prefix for cross-referencing",
+      "mapping_confidence": 0.5,
+      "unresolved_ambiguity": "Raw Deals dataset lacks matching Serial # column for direct lookup.",
+      "monday_column_type": "text"
+    },
+    {
+      "canonical_name": "customer",
+      "source_column": "Customer Name Code",
+      "recommended_type": "string",
+      "required": true,
+      "normalization_needed": "Convert WOCOMPANY_XXX to COMPANY_XXX",
+      "mapping_confidence": 0.95,
+      "unresolved_ambiguity": "None. Format standardizes WOCOMPANY_002 -> COMPANY_002.",
+      "monday_column_type": "text"
+    },
+    {
+      "canonical_name": "sector",
+      "source_column": "Sector",
+      "recommended_type": "string",
+      "required": false,
+      "normalization_needed": "Map to canonical sector taxonomy",
+      "mapping_confidence": 0.95,
+      "unresolved_ambiguity": "0 missing values.",
+      "monday_column_type": "color"
+    },
+    {
+      "canonical_name": "nature_of_work",
+      "source_column": "Nature of Work",
+      "recommended_type": "string",
+      "required": false,
+      "normalization_needed": "Standardize work categories (One time Project, Monthly Contract, etc.)",
+      "mapping_confidence": 0.9,
+      "unresolved_ambiguity": "12 missing values (6.82%).",
+      "monday_column_type": "dropdown"
+    },
+    {
+      "canonical_name": "project_value_excl_gst",
+      "source_column": "Amount in Rupees (Excl of GST) (Masked)",
+      "recommended_type": "float",
+      "required": false,
+      "normalization_needed": "Cast string numbers to float",
+      "mapping_confidence": 0.9,
+      "unresolved_ambiguity": "1 missing value.",
+      "monday_column_type": "numbers"
+    },
+    {
+      "canonical_name": "project_value_incl_gst",
+      "source_column": "Amount in Rupees (Incl of GST) (Masked)",
+      "recommended_type": "float",
+      "required": false,
+      "normalization_needed": "Cast string numbers to float",
+      "mapping_confidence": 0.9,
+      "unresolved_ambiguity": "0 missing values.",
+      "monday_column_type": "numbers"
+    },
+    {
+      "canonical_name": "start_date",
+      "source_column": "Probable Start Date",
+      "recommended_type": "date",
+      "required": false,
+      "normalization_needed": "Parse Excel timestamps / dates to ISO 8601",
+      "mapping_confidence": 0.9,
+      "unresolved_ambiguity": "19 missing values (10.8%).",
+      "monday_column_type": "date"
+    },
+    {
+      "canonical_name": "due_date",
+      "source_column": "Probable End Date",
+      "recommended_type": "date",
+      "required": false,
+      "normalization_needed": "Parse Excel timestamps / dates to ISO 8601",
+      "mapping_confidence": 0.9,
+      "unresolved_ambiguity": "11 missing values (6.25%).",
+      "monday_column_type": "date"
+    },
+    {
+      "canonical_name": "completion_date",
+      "source_column": "Data Delivery Date",
+      "recommended_type": "date",
+      "required": false,
+      "normalization_needed": "Parse Excel timestamps / dates to ISO 8601",
+      "mapping_confidence": 0.85,
+      "unresolved_ambiguity": "118 missing values (67.05%).",
+      "monday_column_type": "date"
+    },
+    {
+      "canonical_name": "status",
+      "source_column": "Execution Status",
+      "recommended_type": "string",
+      "required": true,
+      "normalization_needed": "Map to standard execution status (Completed, Ongoing, Not Started, etc.)",
+      "mapping_confidence": 0.95,
+      "unresolved_ambiguity": "4 missing values.",
+      "monday_column_type": "color"
+    },
+    {
+      "canonical_name": "owner",
+      "source_column": "BD/KAM Personnel code",
+      "recommended_type": "string",
+      "required": false,
+      "normalization_needed": "Standardize personnel codes (OWNER_001, OWNER_003, etc.)",
+      "mapping_confidence": 0.95,
+      "unresolved_ambiguity": "11 missing values (6.25%).",
+      "monday_column_type": "people"
+    }
+  ]
+}

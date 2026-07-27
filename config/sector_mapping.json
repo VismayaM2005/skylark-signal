@@ -1,0 +1,15 @@
+{
+  "raw_to_canonical_sector": {
+    "Mining": "Mining",
+    "Powerline": "Powerline",
+    "Renewables": "Renewables",
+    "Railways": "Railways",
+    "Construction": "Construction",
+    "Others": "Others",
+    "DSP": "Software & DSP",
+    "Tender": "Tenders",
+    "Manufacturing": "Manufacturing",
+    "Security and Surveillance": "Surveillance",
+    "Aviation": "Aviation"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "deals_status": {
+    "Won": "Won",
+    "Dead": "Dead",
+    "Open": "Open",
+    "On Hold": "On Hold"
+  },
+  "work_orders_execution_status": {
+    "Completed": "Completed",
+    "Ongoing": "Ongoing",
+    "Executed until current month": "Executed Current Month",
+    "Not Started": "Not Started",
+    "Pause / struck": "Paused",
+    "Partial Completed": "Partially Completed",
+    "Details pending from Client": "Pending Client Details"
+  },
+  "work_orders_invoice_status": {
+    "Fully Billed": "Fully Billed",
+    "Partially Billed": "Partially Billed",
+    "Not billed yet": "Not Billed",
+    "Billed- Visit 7": "Partially Billed",
+    "Billed- Visit 3": "Partially Billed",
+    "Stuck": "Stuck"
+  },
+  "work_orders_billing_status": {
+    "Update Required": "Update Required",
+    "Partially Billed": "Partially Billed",
+    "BIlled": "Billed",
+    "Not Billable": "Not Billable",
+    "Stuck": "Stuck"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "deals_stage_taxonomy": {
+    "A. Lead Generated": {
+      "canonical_stage": "Lead Generated",
+      "stage_order": 1,
+      "status_category": "Open"
+    },
+    "B. Sales Qualified Leads": {
+      "canonical_stage": "Sales Qualified Lead",
+      "stage_order": 2,
+      "status_category": "Open"
+    },
+    "C. Demo Done": {
+      "canonical_stage": "Demo Done",
+      "stage_order": 3,
+      "status_category": "Open"
+    },
+    "D. Feasibility": {
+      "canonical_stage": "Feasibility",
+      "stage_order": 4,
+      "status_category": "Open"
+    },
+    "E. Proposal/Commercials Sent": {
+      "canonical_stage": "Proposal Sent",
+      "stage_order": 5,
+      "status_category": "Open"
+    },
+    "F. Negotiations": {
+      "canonical_stage": "Negotiations",
+      "stage_order": 6,
+      "status_category": "Open"
+    },
+    "G. Project Won": {
+      "canonical_stage": "Project Won",
+      "stage_order": 7,
+      "status_category": "Won"
+    },
+    "H. Work Order Received": {
+      "canonical_stage": "Work Order Received",
+      "stage_order": 8,
+      "status_category": "Won"
+    },
+    "I. POC": {
+      "canonical_stage": "POC",
+      "stage_order": 9,
+      "status_category": "Open"
+    },
+    "J. Invoice sent": {
+      "canonical_stage": "Invoice Sent",
+      "stage_order": 10,
+      "status_category": "Won"
+    },
+    "K. Amount Accrued": {
+      "canonical_stage": "Amount Accrued",
+      "stage_order": 11,
+      "status_category": "Won"
+    },
+    "Project Completed": {
+      "canonical_stage": "Project Completed",
+      "stage_order": 12,
+      "status_category": "Won"
+    },
+    "L. Project Lost": {
+      "canonical_stage": "Project Lost",
+      "stage_order": 99,
+      "status_category": "Dead"
+    },
+    "M. Projects On Hold": {
+      "canonical_stage": "Project On Hold",
+      "stage_order": 98,
+      "status_category": "On Hold"
+    },
+    "N. Not relevant at the moment": {
+      "canonical_stage": "Not Relevant Currently",
+      "stage_order": 97,
+      "status_category": "Dead"
+    },
+    "O. Not Relevant at all": {
+      "canonical_stage": "Not Relevant",
+      "stage_order": 96,
+      "status_category": "Dead"
+    }
+  }
+}

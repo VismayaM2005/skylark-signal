@@ -1,0 +1,310 @@
+{
+  "dataset": "Deals",
+  "worksheet": "Deal tracker",
+  "metrics": {
+    "raw_worksheet_rows": 346,
+    "blank_rows_removed": 0,
+    "repeated_header_rows_removed": 2,
+    "exact_duplicate_business_rows": 12,
+    "usable_business_records": 332,
+    "column_count": 12
+  },
+  "columns": {
+    "Deal Name": {
+      "source_column": "Deal Name",
+      "dtype": "object",
+      "missing_count": 2,
+      "missing_percentage": 0.6,
+      "unique_value_count": 155,
+      "sample_values": [
+        "Naruto",
+        "Sasuke",
+        "Sakura",
+        "Kakashi",
+        "Goku"
+      ],
+      "top_value_counts": {
+        "Sakura": 27,
+        "Alphonse": 19,
+        "Ben Tennyson": 15,
+        "Alias_162": 11,
+        "Mojo Jojo": 9,
+        "Subaru": 9,
+        "Timon": 9,
+        "Alias_160": 9,
+        "Erwin": 7,
+        "Bugs Bunny": 6
+      }
+    },
+    "Owner code": {
+      "source_column": "Owner code",
+      "dtype": "object",
+      "missing_count": 15,
+      "missing_percentage": 4.52,
+      "unique_value_count": 8,
+      "sample_values": [
+        "OWNER_001",
+        "OWNER_002",
+        "OWNER_003",
+        "OWNER_004",
+        "OWNER_005"
+      ],
+      "top_value_counts": {
+        "OWNER_003": 171,
+        "OWNER_001": 79,
+        "OWNER_002": 24,
+        "OWNER_006": 24,
+        "OWNER_004": 17,
+        "nan": 15,
+        "OWNER_005": 1,
+        "OWNER_007": 1
+      }
+    },
+    "Client Code": {
+      "source_column": "Client Code",
+      "dtype": "object",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_value_count": 199,
+      "sample_values": [
+        "COMPANY089",
+        "COMPANY091",
+        "COMPANY124",
+        "COMPANY046",
+        "COMPANY148"
+      ],
+      "top_value_counts": {
+        "COMPANY005": 16,
+        "COMPANY038": 14,
+        "COMPANY133": 11,
+        "COMPANY186": 9,
+        "COMPANY111": 8,
+        "COMPANY169": 7,
+        "COMPANY007": 7,
+        "COMPANY182": 7,
+        "COMPANY172": 6,
+        "COMPANY148": 5
+      }
+    },
+    "Deal Status": {
+      "source_column": "Deal Status",
+      "dtype": "object",
+      "missing_count": 1,
+      "missing_percentage": 0.3,
+      "unique_value_count": 5,
+      "sample_values": [
+        "Open",
+        "On Hold",
+        "Dead",
+        "Won"
+      ],
+      "top_value_counts": {
+        "Won": 153,
+        "Dead": 127,
+        "Open": 49,
+        "On Hold": 2,
+        "nan": 1
+      }
+    },
+    "Close Date (A)": {
+      "source_column": "Close Date (A)",
+      "dtype": "object",
+      "missing_count": 306,
+      "missing_percentage": 92.17,
+      "unique_value_count": 18,
+      "sample_values": [
+        "2025-07-31 00:00:00",
+        "2025-01-06 00:00:00",
+        "2024-12-31 00:00:00",
+        "2025-06-23 00:00:00",
+        "2025-08-29 00:00:00"
+      ],
+      "top_value_counts": {
+        "NaT": 306,
+        "2026-01-01 00:00:00": 3,
+        "2025-11-28 00:00:00": 3,
+        "2026-01-15 00:00:00": 3,
+        "2026-01-12 00:00:00": 2,
+        "2025-12-31 00:00:00": 2,
+        "2025-12-12 00:00:00": 2,
+        "2025-07-31 00:00:00": 1,
+        "2025-06-23 00:00:00": 1,
+        "2025-01-06 00:00:00": 1
+      }
+    },
+    "Closure Probability": {
+      "source_column": "Closure Probability",
+      "dtype": "object",
+      "missing_count": 247,
+      "missing_percentage": 74.4,
+      "unique_value_count": 4,
+      "sample_values": [
+        "High",
+        "Medium",
+        "Low"
+      ],
+      "top_value_counts": {
+        "nan": 247,
+        "High": 47,
+        "Medium": 22,
+        "Low": 16
+      }
+    },
+    "Masked Deal value": {
+      "source_column": "Masked Deal value",
+      "dtype": "float64",
+      "missing_count": 167,
+      "missing_percentage": 50.3,
+      "unique_value_count": 104,
+      "sample_values": [
+        "489360.0",
+        "17616960.0",
+        "611700.0",
+        "2348928.0",
+        "428190.0"
+      ],
+      "top_value_counts": {
+        "nan": 167,
+        "489360.0": 8,
+        "1223400.0": 8,
+        "305850.0": 7,
+        "550530.0": 6,
+        "367020.0": 6,
+        "611700.0": 5,
+        "244680.0": 5,
+        "1835100.0": 4,
+        "3670200.0": 3
+      }
+    },
+    "Tentative Close Date": {
+      "source_column": "Tentative Close Date",
+      "dtype": "object",
+      "missing_count": 63,
+      "missing_percentage": 18.98,
+      "unique_value_count": 79,
+      "sample_values": [
+        "2026-02-26 00:00:00",
+        "2026-02-28 00:00:00",
+        "2026-03-20 00:00:00",
+        "2026-02-12 00:00:00",
+        "2024-09-30 00:00:00"
+      ],
+      "top_value_counts": {
+        "NaT": 63,
+        "2025-08-31 00:00:00": 20,
+        "2025-02-28 00:00:00": 17,
+        "2025-07-31 00:00:00": 13,
+        "2025-07-04 00:00:00": 12,
+        "2025-01-14 00:00:00": 12,
+        "2026-01-31 00:00:00": 11,
+        "2025-10-31 00:00:00": 11,
+        "2025-05-13 00:00:00": 10,
+        "2024-09-30 00:00:00": 10
+      }
+    },
+    "Deal Stage": {
+      "source_column": "Deal Stage",
+      "dtype": "object",
+      "missing_count": 0,
+      "missing_percentage": 0.0,
+      "unique_value_count": 16,
+      "sample_values": [
+        "B. Sales Qualified Leads",
+        "E. Proposal/Commercials Sent",
+        "D. Feasibility",
+        "M. Projects On Hold",
+        "H. Work Order Received"
+      ],
+      "top_value_counts": {
+        "A. Lead Generated": 63,
+        "H. Work Order Received": 46,
+        "L. Project Lost": 42,
+        "E. Proposal/Commercials Sent": 28,
+        "G. Project Won": 27,
+        "M. Projects On Hold": 20,
+        "N. Not relevant at the moment": 19,
+        "O. Not Relevant at all": 18,
+        "Project Completed": 18,
+        "B. Sales Qualified Leads": 14
+      }
+    },
+    "Product deal": {
+      "source_column": "Product deal",
+      "dtype": "object",
+      "missing_count": 159,
+      "missing_percentage": 47.89,
+      "unique_value_count": 10,
+      "sample_values": [
+        "Service + Spectra",
+        "Pure Service",
+        "Spectra + DMO",
+        "Hardware",
+        "Dock + DMO + Spectra + Service"
+      ],
+      "top_value_counts": {
+        "nan": 159,
+        "Pure Service": 150,
+        "Service + Spectra": 12,
+        "Dock + DMO + Spectra + Service": 3,
+        "Spectra Deal": 3,
+        "Spectra + DMO": 1,
+        "Hardware": 1,
+        "Dock + Spectra + Service": 1,
+        "Dock + DMO + Spectra": 1,
+        "Dock + DMO": 1
+      }
+    },
+    "Sector/service": {
+      "source_column": "Sector/service",
+      "dtype": "object",
+      "missing_count": 8,
+      "missing_percentage": 2.41,
+      "unique_value_count": 12,
+      "sample_values": [
+        "Mining",
+        "Powerline",
+        "Tender",
+        "Renewables",
+        "DSP"
+      ],
+      "top_value_counts": {
+        "Renewables": 109,
+        "Mining": 97,
+        "Railways": 39,
+        "Others": 28,
+        "Powerline": 26,
+        "Construction": 9,
+        "nan": 8,
+        "DSP": 7,
+        "Tender": 5,
+        "Manufacturing": 2
+      }
+    },
+    "Created Date": {
+      "source_column": "Created Date",
+      "dtype": "object",
+      "missing_count": 1,
+      "missing_percentage": 0.3,
+      "unique_value_count": 84,
+      "sample_values": [
+        "2025-12-26 00:00:00",
+        "2025-09-15 00:00:00",
+        "2025-11-12 00:00:00",
+        "2025-10-14 00:00:00",
+        "2025-10-10 00:00:00"
+      ],
+      "top_value_counts": {
+        "2025-11-27 00:00:00": 60,
+        "2025-07-28 00:00:00": 22,
+        "2024-11-17 00:00:00": 18,
+        "2025-05-14 00:00:00": 17,
+        "2025-11-18 00:00:00": 15,
+        "2026-01-08 00:00:00": 14,
+        "2025-01-17 00:00:00": 11,
+        "2025-09-15 00:00:00": 11,
+        "2024-09-20 00:00:00": 8,
+        "2025-01-16 00:00:00": 8
+      }
+    }
+  }
+}

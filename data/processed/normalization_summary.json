@@ -1,0 +1,95 @@
+{
+  "raw_file_verification": {
+    "deals_sha256_before": "a40f462176202ed09cd046d5ed9c70eae855e7811de7b85ca4704b27b75e2174",
+    "deals_sha256_after": "a40f462176202ed09cd046d5ed9c70eae855e7811de7b85ca4704b27b75e2174",
+    "work_orders_sha256_before": "4459274f93936757f644cd1acae37b17bace818063cbaa576b9af8dd89085105",
+    "work_orders_sha256_after": "4459274f93936757f644cd1acae37b17bace818063cbaa576b9af8dd89085105",
+    "status": "RAW_FILES_UNTOUCHED"
+  },
+  "row_count_reconciliation": {
+    "deals": {
+      "physical_worksheet_rows": 347,
+      "header_row": 1,
+      "blank_rows": 0,
+      "embedded_repeated_header_rows": 2,
+      "duplicate_business_rows_removed": 12,
+      "canonical_output_rows": 332
+    },
+    "work_orders": {
+      "physical_worksheet_rows": 178,
+      "blank_rows_before_header": 1,
+      "header_row": 1,
+      "blank_business_rows": 0,
+      "duplicate_business_rows_removed": 0,
+      "canonical_output_rows": 176
+    }
+  },
+  "probability_reconciliation": {
+    "raw_total_rows": 346,
+    "raw_null_probability_count": 258,
+    "raw_non_null_probability_count": 88,
+    "repeated_header_probability_values": [
+      "Closure Probability",
+      "Closure Probability"
+    ],
+    "usable_raw_null_probability_count": 247,
+    "usable_raw_non_null_probability_count": 85,
+    "successfully_parsed_probability_count": 85,
+    "unparseable_probability_count": 0,
+    "final_canonical_null_probability_count": 247,
+    "final_canonical_non_null_probability_count": 85,
+    "raw_value_counts": {
+      "NaN": 258,
+      "High": 48,
+      "Medium": 22,
+      "Low": 16,
+      "Closure Probability": 2
+    }
+  },
+  "customer_code_quality_summary": {
+    "customer_code_normalized": 508
+  },
+  "customer_code_coverage": {
+    "unique_deals_customers": 199,
+    "unique_work_orders_customers": 51,
+    "shared_customers_count": 50,
+    "work_orders_with_deals_customer_match": 175,
+    "work_orders_customer_match_percentage": 99.43
+  },
+  "work_order_id_uniqueness": {
+    "total_work_orders": 176,
+    "unique_work_order_ids": 176,
+    "duplicate_work_order_ids_count": 0,
+    "is_unique": true
+  },
+  "tax_rate_statistics": {
+    "records_with_both_amounts_available": 175,
+    "records_missing_amounts": 1,
+    "min_implied_tax_rate": 0.18,
+    "max_implied_tax_rate": 0.18,
+    "median_implied_tax_rate": 0.18,
+    "distinct_rates_and_counts": {
+      "0.18": 169
+    },
+    "records_incl_below_excl": 0,
+    "records_zero_or_negative_excl": 6,
+    "unusual_tax_rate_flagged_count": 0
+  },
+  "quality_flags_summary": {
+    "total_flags_generated": 1501,
+    "by_severity": {
+      "info": 1493,
+      "warning": 8
+    },
+    "by_code": {
+      "customer_code_normalized": 508,
+      "synthetic_deal_id": 332,
+      "missing_probability": 247,
+      "missing_deal_value": 167,
+      "missing_exact_close_date": 63,
+      "missing_deal_name": 2,
+      "no_source_deal_reference": 176,
+      "unexpected_tax_rate": 6
+    }
+  }
+}
