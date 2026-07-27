@@ -11,6 +11,9 @@ The application can be deployed instantly to **Streamlit Community Cloud**, **Ra
 - **Deployment Config**: [`.streamlit/config.toml`](.streamlit/config.toml) and [`Procfile`](Procfile)
 - **Evaluation Readiness**: Launches cleanly without local setup; defaults to live monday.com API whenever credentials exist.
 
+> 🔒 **Strict Read-Only Integration Guarantee**:
+> All queries to monday.com use read-only GraphQL requests (`boards`, `items_page`). Recommended Action checkboxes displayed in the UI are local presentation affordances for executive task tracking during meetings and **NEVER** issue write actions or mutations back to monday.com.
+
 ---
 
 ## 🏗️ Architecture Overview
